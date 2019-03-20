@@ -1,6 +1,7 @@
 const config = {
     http_port: 8000,
     watch_restart_timeout: 7,
+    lang: 'zh', // 默认语言
 }
 
 

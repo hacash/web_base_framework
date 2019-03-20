@@ -61,6 +61,7 @@ exports.render = function(vname, query, res)
         }
         // render
         let datas = Object.assign({
+            lang: res.lang, // 语言
             page_vname: vname,
         }, data)
         res.end( view.tplfunc(datas) )

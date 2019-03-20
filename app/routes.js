@@ -2,7 +2,7 @@ module.exports = {
 
     '/': 'main',
 
-    '/api/test': 'api/test',
-    'POST/api/test': 'api/test',
+    '/api/lang': 'api/lang',
+    'POST/api/lang': 'api/lang',
 
 }
