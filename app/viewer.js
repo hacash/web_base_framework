@@ -48,7 +48,7 @@ exports.compile = function(conf)
 }
 
 
-exports.render = function(vname, query, res)
+exports.render = function(vname, query, req, res)
 {
     const view = tplCache[vname]
     // console.log(view)
@@ -65,5 +65,5 @@ exports.render = function(vname, query, res)
             page_vname: vname,
         }, data)
         res.end( view.tplfunc(datas) )
-    })
+    }, req, res)
 }
